@@ -6,7 +6,11 @@ import CheckoutForm from "./CheckoutForm";
 // Write up the two tests here and make sure they are testing what the title shows
 
 test("renders without errors", () => {
-    render(<CheckoutForm />)
+    render(<CheckoutForm />);
 });
 
-test("shows success message on submit with form details", () => {});
+test("shows success message on submit with form details", () => {
+    render(<CheckoutForm />);
+    const success = screen.getByTestId(/successMessage/i)
+    expect(succes).toBeInTheDocument();
+});
