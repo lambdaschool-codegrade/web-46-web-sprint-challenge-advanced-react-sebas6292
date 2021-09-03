@@ -74,12 +74,11 @@ const CheckoutForm = (props) => {
           <p>
             {values.city}, {values.state} {values.zip}
           </p>
-
         </div>
       )}
     </>
-  );
-};
+  )
 
-}
+
+};
 export default CheckoutForm;
