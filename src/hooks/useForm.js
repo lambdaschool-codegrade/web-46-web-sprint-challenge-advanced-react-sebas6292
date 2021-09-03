@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const useForm = () => {
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-    const [values, setValues] = useState();
+    const [values, setValues] = useState('');
 
     const handleChanges = (e) => {
         setValues({ ...values, [e.target.name]: e.target.value });
